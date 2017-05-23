@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>London West End</title>
+	<meta charset="UTF-8">
+	<meta name="author" content="me">
+	<meta name="description" content="A website promoting musicals in London West End.">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="layout.css">
+	<link rel="stylesheet" type="text/css" href="bookings.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Questrial" rel="stylesheet">
+</head>	
+
+<div id="container">
+
+<!-- Header -->
+
+<div id="header">
+	<div>
+		<h1>London West End</h1>
+	</div>
+	
+	<div class="media_icons">
+		<a href="https://www.facebook.com/LondonWestEnd/" target="_blank">
+			<img src="images/facebook.png" alt="The logo of facebook" title="The logo of facebook" class="social_media">
+		</a>
+		<a href="https://twitter.com/londonwestend?lang=en" target="_blank">
+			<img src="images/twitter.png" alt="The logo of twitter" title="The logo of twitter" class="social_media">
+		</a>
+		<a href="https://www.instagram.com/london.westend/" target="_blank">
+			<img src="images/instagram.png" alt="The logo of instagram" title="The logo of instagram" class="social_media">
+		</a>
+	</div>
+</div>
+
+<!-- Navigation -->
+
+<div id="navigation">
+	<ul class="navflex">
+		<li><a href="index.html"><img src="images/home_button.png" alt="An icon representing a house." title="An icon representing a house." id="home_button"></a></li>
+			<li><a href="phantom.html">Phantom of the Opera</a></li>
+				<li class="tilde">~</li>
+			<li><a href="lion_king.html">The Lion King</a></li>
+				<li class="tilde">~</li>
+			<li><a href="wicked.html">Wicked</a></li>
+				<li class="tilde">~</li>
+			<li><a href="bookings.html">Bookings</a></li>
+				<li class="tilde">~</li>
+			<li><a href="location.html">Location</a></li>
+	</ul>
+</div>
+
+<!-- Main Content -->
+
+<div id="content">
+	<div id="title">
+		<h2>Ticket Request Form</h2>
+		
+		<hr id="short_line">
+		
+		<p id="title_info">
+			Please use the form below to request tickets for a musical. After submitting, you will receive a confirmation email with further instructions regarding payment. 
+		</p>
+	</div>
+
+	<div class="ticket_forms">
+		<h3>Booking Details</h3>
+		<div id="booking_info">
+				Musical name:<br>
+				<form>
+				<select>
+					<option>&#62; Select a musical &lt;</option>
+					<option>Phantom of the Opera</option>
+					<option>The Lion King</option>
+					<option>Wicked</option>
+				</select><br><br>
+				Date:<br>
+				<input type="date"><br><br>
+			Performance Time:<br>
+				<select>
+					<option>&#62; Select a time &lt;</option>
+					<option>2:30pm (Matinee)</option>
+					<option>7:30pm (Evening)</option>	 
+				</select><br><br>
+				 Quantity of tickets (10 max):<br>
+				<input type="text" pattern="^([1-9]|10)?$" title="Please enter a number between 1 and 10" id="quantity"><br><br>
+				Ticket type:<br>
+				<select>
+					<option>&#62; Select ticket type &lt;</option>
+					<option>Child - £5</option>
+					<option>Senior - £10</option>
+					<option>Adult - £15</option>
+				</select>
+		
+		<h3>Your Details</h3>
+				First name:<br>
+				<input type="text"><br><br>
+				Last name:<br>
+				<input type="text"><br><br>
+				E-mail:<br>
+				<input type="email"><br><br>
+				Phone number:<br>
+				<input type="number"><br><br>
+				Address line:<br>
+				<input type="text"><br><br>
+				Address line 2:<br>
+				<input type="text"><br><br>
+				City:<br>
+				<input type="text"><br><br>
+				Postcode:<br>
+				<input type="text"><br><br>
+				Special requests/notes:<br>
+				<textarea rows="5" cols="30"></textarea><br><br>
+				How would you like to receive your tickets?<br>
+				<input type="radio" name="via"> Via E-mail<br>
+				<input type="radio" name="via"> Via Post<br><br>
+				<input type="submit" name="submit" id="button">
+				</form>
+				<script>
+					document.getElementById("button").addEventListener("click", function(){
+					var num = parseInt(document.getElementById("quantity").value);
+					if( num > 0 && num <11){
+					alert("Success!");
+					}
+					});
+				</script>
+			</div>
+		</div>
+	</div>
+
+<!-- Footer -->
+
+<div id="footer">
+	<div id="copyright">
+		© London West End 2017
+	</div>
+	<div id="design_line">
+		Design by Bartosz Jasik <br>
+		All images belong to their respective owners.
+	</div>
+</div>
+</div>
+
+<!--Scroll to top button-->
+<button onclick="topFunction()" id="scroll_top" title="Go to top">^</button>
+
+<script>
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("scroll_top").style.display = "block";
+    } else {
+        document.getElementById("scroll_top").style.display = "none";
+    }
+}
+
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
+</script>
+</body>
+</html>

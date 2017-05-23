@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>London West End</title>
+	<meta charset="UTF-8">
+	<meta name="author" content="me">
+	<meta name="description" content="A website promoting musicals in London West End.">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="layout.css">
+	<link rel="stylesheet" type="text/css" href="location.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Questrial" rel="stylesheet">
+</head>	
+
+<div id="container">
+
+<!-- Header -->
+
+<div id="header">
+	<div>
+		<h1>London West End</h1>
+	</div>
+	
+	<div class="media_icons">
+		<a href="https://www.facebook.com/LondonWestEnd/" target="_blank">
+			<img src="images/facebook.png" alt="The logo of facebook" title="The logo of facebook" class="social_media">
+		</a>
+		<a href="https://twitter.com/londonwestend?lang=en" target="_blank">
+			<img src="images/twitter.png" alt="The logo of twitter" title="The logo of twitter" class="social_media">
+		</a>
+		<a href="https://www.instagram.com/london.westend/" target="_blank">
+			<img src="images/instagram.png" alt="The logo of instagram" title="The logo of instagram" class="social_media">
+		</a>
+	</div>
+</div>
+
+<!-- Navigation -->
+
+<div id="navigation">
+	<ul class="navflex">
+		<li><a href="index.html"><img src="images/home_button.png" alt="An icon representing a house." title="An icon representing a house." id="home_button"></a></li>
+			<li><a href="phantom.html">Phantom of the Opera</a></li>
+				<li class="tilde">~</li>
+			<li><a href="lion_king.html">The Lion King</a></li>
+				<li class="tilde">~</li>
+			<li><a href="wicked.html">Wicked</a></li>
+				<li class="tilde">~</li>
+			<li><a href="bookings.html">Bookings</a></li>
+				<li class="tilde">~</li>
+			<li><a href="location.html">Location</a></li>
+	</ul>
+</div>
+
+<!-- Main Content -->
+
+<div id="content">
+	<div id="heading">
+		<h2>Lyceum Theatre</h2>
+		<img src="images/lyceum.png" alt="A photograph of the Lyceum Theatre, front view" id="lyceum_img">
+	</div>
+	
+	<hr>
+	
+	<div id="info_map">
+		<div id="about">
+			<div class="about_title">
+				About the Lyceum Theatre
+			</div>
+			<p>
+				The Lyceum Theatre is a 2,000-seat West End theatre located in the City of Westminster, on Wellington Street, just off the Strand. There has been a theatre with this name in the locality since 1765, and the present site opened on 14 July 1834 to a design by Samuel Beazley. The building was unique in that it had a balcony overhanging the circle. It was built by the partnership of Peto & Grissell.
+			</p>
+			
+			<div class="about_title">
+				Facilities
+			</div>
+			<ul>
+				<li><strong>Bars</strong>: Bars are available across all levels of the theatre.</li>
+				<li><strong>Toilets:</strong> Men’s and women’s toilets are available on all levels of the theatre. Two accessible toilets are located on the Stalls level.</li>
+				<li><strong>Access:</strong> Access spaces are located in the Stalls. Call the access line for booking.</li>
+				<li><strong>Air Conditioning:</strong> Yes, the theatre is fully air conditioned.</li>
+				<li><strong>Booster Seats:</strong> Booster cushions are available on a first-come, first-served basis.</li>
+				<li><strong>Cloakroom:</strong> A cloakroom is available at this venue.</li>
+			</ul>
+		</div>
+		<div>
+			<iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2483.088296230312!2d-0.12217588386061203!3d51.511596079635844!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d8ac8952747c71%3A0x65cbdd71dcb817f0!2sLyceum+Theatre!5e0!3m2!1sen!2suk!4v1495032278494" width="700" height="525" style="border:0" allowfullscreen></iframe>
+		</div>
+	</div>
+	
+	<hr>
+	
+	<div id="more_info">
+		<div class="more_info">
+			For more information about The Lyceum Theatre<br> please
+			visit the official website using the button below:
+		</div>
+		<div id="button">
+			<a href="http://www.lyceum-theatre.co.uk/" class="button" target="_blank">Lyceum Theatre Official Website</a>
+		</div>
+	</div>
+</div>
+
+<!-- Footer -->
+
+<div id="footer">
+	<div id="copyright">
+		© London West End 2017
+	</div>
+	<div id="design_line">
+		Design by Bartosz Jasik <br>
+		All images belong to their respective owners.
+	</div>
+</div>
+</div>
+
+<!--Scroll to top button-->
+<button onclick="topFunction()" id="scroll_top" title="Go to top">^</button>
+
+<script>
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("scroll_top").style.display = "block";
+    } else {
+        document.getElementById("scroll_top").style.display = "none";
+    }
+}
+
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
+</script>
+</body>
+</html>

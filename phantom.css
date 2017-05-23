@@ -1,0 +1,410 @@
+
+
+/*--------------
+Main content Stylings
+---------------*/
+
+#content{
+	width: 100%;
+	height: auto;
+	background-color: #00131B;
+}
+
+/*--------------
+Image and text overlay styling
+---------------*/
+
+#heading {
+	background-color: #000000;
+}
+
+h2 {
+	color: #FFFFFF;
+	font-family: 'Libre Baskerville';
+	font-size: 65px;
+	text-align: center;
+	padding: 25px 0px;
+	letter-spacing: 2px;
+	position: absolute;
+	top: 51%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+#phantom_image {
+	position: relative;
+	width: 100%;
+	height: 800px;
+	object-fit: cover;
+	opacity: 0.4;
+}
+
+.button {
+	background-color: #f93b42; 
+	border: 2px solid #f93b42;
+	border-radius: 3px;
+	color: white;
+	font-family: 'PT Sans';
+	font-size: 20px;
+	padding: 15px 48px;
+	text-align: center;
+	text-decoration: none;
+	position: absolute;
+	top: 61%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.button:hover {
+	background-color: #FFFFFF;
+	color: #000000;
+	border: 2px solid #FFFFFF;
+	border-radius: 3px;
+	transition: .5s ease;
+}
+
+@media all and (max-width: 800px) {
+	h2 {
+		font-size: 50px;
+		top: 90%;
+		left: 50%;
+	}
+	
+	.button {
+		top: 120%;
+		left: 50%;
+	}
+}
+
+@media all and (max-width: 1440px) {
+	h2 {
+		top: 50%;
+		left: 50%;
+	}
+	
+	.button
+	{
+		top: 70%;
+		left: 50%;
+	}
+}
+
+
+/*--------------
+3 facts stylings
+---------------*/
+
+.facts {
+ 	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center ;
+	
+}
+
+.fact1, .fact2, .fact3 {
+	font-family: 'PT sans';
+	font-size: 27px;
+	text-align: center;
+	color: white;
+	border: 2px solid #ffffff;
+	width: auto;
+	height: auto;
+	padding: 40px 60px;
+	margin: 40px;	
+}
+
+@media all and (max-width: 1000px) {
+	.facts {
+		flex-direction: column;
+	}
+	
+	.fact1, .fact2, .fact3 {
+		padding: 30px 10px;
+		width: 50%;
+		margin: 0 auto;
+	}
+}
+
+/*------------
+Synopsis stylings
+--------------*/
+
+.synopsis {
+	display: flex;
+	justify-content: center;
+	flex-direction: row;
+	flex-wrap: wrap;
+	margin-top: 40px;
+}
+
+#synopsis_title {
+	color: #FFFFFF;
+	font-family: 'Quattrocento';
+	font-weight: bold;
+	font-size: 30px;
+	text-align: center;
+	letter-spacing: 2px;
+	text-decoration: underline;
+	padding-bottom: 5px;
+	width: 23%;
+}
+
+#synopsis_text {
+	color: #FFFFFF;
+	font-family: 'PT Sans';
+	font-size: 19px;
+	text-align: left;
+	width: 26%;
+	margin-left: 45px;
+	padding-top: 10px;
+}
+
+#phantom3 {
+	object-fit: cover;
+	width: 44%;
+	max-height: 400px;
+	border: 1px solid #FFFFFF;
+}
+
+@media all and (max-width: 1000px) {
+	.synopsis {
+		flex-direction: column;
+		text-align: center;
+	}
+	
+	#phantom3 {
+		margin: 0 auto;
+		width: 80%;
+	}
+	
+	#synopsis_text {
+		margin: 0 auto;
+		width: 100%;
+		text-align: center;
+	}
+}
+
+@media all and (max-width: 1440px) {
+	#synopsis_text {
+		width: 32%;
+	}
+}
+
+
+/*---------------
+Prices/Times Stylings
+------------------*/
+
+#times_prices {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	text-align: center;
+	padding: 70px 0px;
+}
+
+h3 {
+	color: #FFFFFF;
+	font-size: 40px;
+	font-family: 'Quattrocento';
+	font-weight: bold;
+	margin: 25px 190px;
+	letter-spacing: 1px;
+	text-decoration: underline;
+}
+
+#line {
+	height: auto;
+	width: 4px;
+	border-right: 4px dashed #FFFFFF;
+}
+
+@media all and (max-width: 1254px) {
+	#line {
+		display: none;
+	}
+}
+
+/*------------------
+Ticket prices stylings
+--------------------*/
+
+#times_prices li {
+	color: #FFFFFF;
+	font-family: 'PT Sans';
+	font-size: 20px;
+	word-spacing: 2px;
+}
+
+#times_prices ul {
+	width: 20%;
+  margin: 0 auto;
+  text-align: left;
+	list-style-type: circle;
+}
+
+#notice {
+	width: 100%;
+	margin: 0 auto;
+	color: #FFFFFF;
+	font-family: 'PT Sans';
+	font-size: 14px;
+	padding: 12px 0px;
+	margin-bottom: 45px;
+	margin-top: 10px;
+}
+
+.button2 {
+	background-color: #f93b42; 
+	border: 2px solid #f93b42;
+	border-radius: 3px;
+	color: white;
+	font-family: 'PT Sans';
+	font-size: 20px;
+	padding: 12px 30px;
+	margin: 20px;
+	text-align: center;
+	text-decoration: none;
+}
+
+.button2:hover {
+	background-color: #FFFFFF;
+	color: #000000;
+	border: 2px solid #FFFFFF;
+	border-radius: 3px;
+	transition: .5s ease;
+}
+
+/*-----------------------
+Performance times stylings
+-------------------------*/
+
+.evenings, .matinees {
+	display: inline-block;
+	color: #FFFFFF;
+	font-family: 'PT sans';
+	font-size: 18px;
+	padding: 0px 15px;
+	margin: 0px 30px;
+	margin-bottom: 53px;
+	border: 1px solid #FFF;
+}
+
+#evenings_title, #matinees_title {
+	font-weight: bold;
+	font-size: 24px;
+	letter-spacing: 1px;
+}
+
+#evenings, #matinee {
+	padding: 4px 0px;
+	word-spacing: 4px;
+}
+
+#evening_time, #matinee_time{
+	font-size: 25px;
+}
+
+.button3 {
+	background-color: #f93b42; 
+	border: 2px solid #f93b42;
+	border-radius: 3px;
+	color: white;
+	font-family: 'PT Sans';
+	font-size: 20px;
+	padding: 12px 30px;
+	margin: 20px;
+	text-align: center;
+	text-decoration: none;
+}
+
+.button3:hover {
+	background-color: #FFFFFF;
+	color: #000000;
+	border: 2px solid #FFFFFF;
+	border-radius: 3px;
+	transition: .5s ease;
+}
+
+/*--------------
+More info stylings
+----------------*/
+
+#more_info {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: no-wrap;
+}
+
+.more_info {
+	margin: 0 auto;
+	max-width: 45%;
+	color: #FFFFFF;
+	font-size: 22px;
+	font-family: 'PT Sans';
+	text-align: center;
+	border: 1px solid #FFFFFF;
+	padding: 10px 18px;
+	margin-top: 20px;
+	margin-bottom: 50px;
+}
+
+#button4{
+	align-self: center;
+	margin-bottom: 30px;
+}
+
+.button4 {
+	background-color: #f93b42; 
+	border: 2px solid #f93b42;
+	border-radius: 3px;
+	color: white;
+	font-family: 'PT Sans';
+	font-size: 20px;
+	padding: 14px 30px;
+	margin: 20px;
+	text-align: center;
+	text-decoration: none;
+}
+
+.button4:hover {
+	background-color: #FFFFFF;
+	color: #000000;
+	border: 2px solid #FFFFFF;
+	border-radius: 3px;
+	transition: .5s ease;
+}
+
+/*-----------
+Scroll to top button
+-----------*/
+
+#scroll_top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #f93b42;
+		color: #FFF;
+    width: 50px;
+    height: 50px;
+    display: block;
+    text-decoration: none;
+		cursor: pointer;
+		z-index: 99;
+		border: none;
+		outline: none;
+    border-radius: 35px;
+    display: none;
+    transition: all 0.3s ease;
+		font-size: 30px;
+		font-weight: bold;
+		padding-top: 10px;
+		font-family: 'Questrial';
+}
+
+#scroll_top:hover {
+	background-color: #FFF;
+	color: #000;
+}

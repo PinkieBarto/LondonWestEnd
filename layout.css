@@ -1,0 +1,272 @@
+/**
+*
+* CH01 - Headers
+* CH01 - Navigations
+* CH03 - Footers
+*
+**/
+
+*{
+	margin: 0;
+}
+
+/*///////////////////////////////////////////////////////
+****************** CH01 - HEADERS ***********************
+//////////////////////////////////////////////////////*/
+
+
+/* ---------------
+CH01 - index.html
+-----------------*/
+
+#header {
+	min-height: 100px;
+	width: 100%;
+	background-color: #1E1E1E;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+
+h1 {
+	font-family: 'Questrial';
+	font-size: 65px;
+	color: #FFFFFF;
+	font-weight: bold;
+	padding-top: 15px;
+	padding-left: 10px;
+}
+
+.social_media {
+	width: 40px;
+	height: 40px;
+	margin: 30px 25px;
+	
+}
+
+@media all and (max-width: 800px) {
+	#header {
+		flex-direction: reverse-column;
+		justify-content: center;
+	}
+	
+	h1 {
+		text-align: center;
+	}
+}
+
+/* ---------------
+CH01 - phantom.html
+-----------------*/
+
+.phantom_page #header{
+	background-color: #09101F;
+}
+
+/* ---------------
+CH01 - lion_king.html
+-----------------*/
+
+.lionking_page #header {
+	background-color: #231F20;
+}
+
+/* ---------------
+CH01 - wicked.html
+-----------------*/
+
+.wicked_page #header {
+	background-color: #231F20;
+}
+
+
+
+
+/*///////////////////////////////////////////////////////
+****************** CH02 - NAVIGATIONS ******************
+//////////////////////////////////////////////////////*/
+
+/* ---------------
+CH02 - index.html
+-----------------*/
+	
+#navigation {
+	height: auto;
+	width: 100%;
+	background-color: #2F4E6F;
+}
+
+	
+.navflex {
+	display: flex;
+	flex-direction: row;
+	margin: 0;
+	list-style-type: none;
+	justify-content: flex-start;
+	padding: 0;
+	margin: 0;
+}
+.navflex a {
+	text-decoration: none;
+	text-decoration: none;
+	font-family: 'Open Sans';
+	font-size: 25px;
+	color: #FFFFFF;
+	padding: 5px 5px;
+	text-align: center;
+}
+
+
+.navflex li:hover {
+  background-color: gray;
+}
+
+.navflex .tilde:hover {
+	background-color: #2F4E6F;
+}
+
+#home_button {
+	width: 30px;
+	height: 30px;
+	padding-top: 5px;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+.tilde {
+	color: #FFFFFF;
+	font-size: 22px;
+	font-weight: bold;
+	font-family: 'Open Sans';
+	padding: 0px 20px;
+}
+
+
+@media all and (max-width: 800px) {
+  .navflex {
+    flex-direction: column;
+		flex-wrap: wrap;
+		text-align: center;
+  }
+	
+	.tilde {
+		display: none;
+	}
+}
+
+/* ---------------
+CH02 - phantom.html
+-----------------*/
+
+.phantom_page #navigation {
+	background-color: #003255;
+}
+
+.phantom_page .navflex li:hover {
+  background-color: #f93b42;
+}
+
+.phantom_page .navflex .tilde:hover {
+	background-color: #003255;
+}
+
+/* ---------------
+CH02 - lion_king.html
+-----------------*/
+
+.lionking_page #navigation {
+	background-color: #E44700; 
+}
+
+.lionking_page .navflex li:hover {
+  background-color: #231F20;
+}
+
+.lionking_page .navflex .tilde:hover {
+	background-color: #E44700;
+}
+
+/* ---------------
+CH02 - wicked.html
+-----------------*/
+
+.wicked_page #navigation {
+	background-color: #02B43C; 
+}
+
+.wicked_page .navflex li:hover {
+  background-color: #A8ADB1;
+}
+
+.wicked_page .navflex .tilde:hover {
+	background-color: #02B43C;
+}
+
+
+/*///////////////////////////////////////////////////////
+****************** CH03 - FOOTERS ***********************
+//////////////////////////////////////////////////////*/
+
+/* ---------------
+CH03 - index.html
+-----------------*/
+
+#footer{
+	min-height: 50px;
+	width: 100%;
+	background-color: #1E1E1E;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+#copyright {
+	color: #FFFFFF;
+	font-family: 'Open Sans';
+	font-size: 16px;
+	padding-left: 10px;
+	padding-top: 15px;
+	text-align: center;
+}
+
+#design_line {
+	color: #FFFFFF;
+	font-family: 'Open Sans';
+	font-size: 16px;
+	padding-right: 13px;
+	padding-bottom: 5px;
+	padding-top: 5px;
+	text-align: center;
+	align-self: flex-end;
+}
+
+@media all and (max-width: 800px) {
+  #footer {
+		flex-direction: column;
+	}
+	
+	#design_line, #copyright {
+		margin: 0 auto;
+	}
+}
+
+/* ---------------
+CH03 - phantom.html
+-----------------*/
+
+.phantom_page #footer {
+	background-color: #09101F;
+}
+
+/* ---------------
+CH03 - lion_king.html
+-----------------*/
+
+.lionking_page #footer {
+	 background-color: #231F20;
+}
+
+
+

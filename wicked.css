@@ -1,0 +1,345 @@
+/*--------------
+Main content Stylings
+---------------*/
+
+#content{
+	width: 100%;
+	height: auto;
+	background-color: #A8ADB1;
+}
+
+/*--------------
+Image and text overlay styling
+---------------*/
+
+#heading {
+	background-color: #005129; 
+}
+
+h2 {
+	color: #FFFFFF;
+	font-family: 'Alfa Slab One';
+	font-size: 80px;
+	text-align: center;
+	padding: 25px 0px;
+	letter-spacing: 5px;
+	position: absolute;
+	top: 53%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+#wicked_image {
+	position: relative;
+	width: 100%;
+	height: 780px;
+	object-fit: cover;
+	opacity: 1.0;
+}
+
+.button {
+	background-color: #02B43C; 
+	color: #FFF;
+	font-family: 'PT Sans';
+	font-size: 20px;
+	padding: 15px 45px;
+	text-align: center;
+	text-decoration: none;
+	position: absolute;
+	top: 63%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.button:hover {
+	background-color: #000;
+	color: #FFF;
+	transition: .5s ease;
+}
+
+/*--------------------
+Reviews Stylings
+----------------------*/
+
+#reviews {
+	background-color: #005129;
+}
+
+#review1, #review2 {
+	color: #FFFFFF;
+	font-family: 'PT Sans';
+	font-size: 28px;
+	text-align: center;
+	padding: 23px 0px;
+}
+
+#source {
+	font-weight: bold;
+	display: inline-block;
+}
+
+#short_dash {
+	color: #FFF;
+	font-family: 'Open Sans';
+	text-align: center;
+	font-weight: bold;
+}
+
+/*-------------
+Synopsis Stylings
+--------------*/
+
+.synopsis {
+	display: flex;
+	justify-content: center;
+	flex-direction: row;
+	flex-wrap: wrap;
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
+
+#synopsis_title {
+	color: #000;
+	font-family: 'Tinos';
+	font-weight: bold;
+	font-size: 30px;
+	text-align: center;
+	letter-spacing: 1px;
+	text-decoration: underline;
+	padding-bottom: 5px;
+	width: 23%;
+}
+
+#synopsis_text {
+	color: #000;
+	font-family: 'PT Sans';
+	font-size: 19px;
+	text-align: left;
+	width: 24%;
+	margin-left: 45px;
+	padding-top: 10px;
+}
+
+#wicked3 {
+	object-fit: cover;
+	width: 34%;
+	max-height: 320px;
+	border: 1px solid #000;
+}
+
+@media all and (max-width: 1440px) {
+	#wicked3 {
+		width: 39%;
+		max-height: 330px;
+	}
+	
+	#synopsis_text {
+		width: 33%;
+		padding-top: 1px;
+	}
+}
+
+hr {
+	margin: 0 auto;
+	width: 50%;
+	border-bottom: 0px;
+}
+
+/*---------------
+Prices/Times Stylings
+------------------*/
+
+#times_prices {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	text-align: center;
+	padding: 60px 0px;
+}
+
+h3 {
+	color: #000;
+	font-size: 40px;
+	font-family: 'Tinos';
+	font-weight: bold;
+	margin: 25px 190px;
+	letter-spacing: 1px;
+	text-decoration: underline;
+}
+
+#line {
+	height: auto;
+	width: 4px;
+	border-right: 4px dashed #000;
+	}
+
+.button2 {
+	background-color: #02B43C; 
+	color: #FFF;
+	font-family: 'PT Sans';
+	font-size: 20px;
+	padding: 15px 45px;
+	text-align: center;
+	text-decoration: none;
+}
+
+.button2:hover {
+	background-color: #000;
+	color: #FFF;
+	transition: .5s ease;
+}
+
+/*------------------
+Ticket prices stylings
+--------------------*/
+
+#times_prices li {
+	color: #000;
+	font-family: 'PT Sans';
+	font-size: 20px;
+	word-spacing: 2px;
+}
+
+#times_prices ul {
+	width: 20%;
+  margin: 0 auto;
+  text-align: left;
+	list-style-type: circle;
+}
+
+#notice {
+	width: 100%;
+	margin: 0 auto;
+	color: #000;
+	font-family: 'PT Sans';
+	font-size: 14px;
+	padding: 12px 0px;
+	margin-bottom: 45px;
+	margin-top: 10px;
+}
+
+/*-----------------------
+Performance times stylings
+-------------------------*/
+
+.evenings, .matinees {
+	display: inline-block;
+	color: #000;
+	font-family: 'PT sans';
+	font-size: 18px;
+	padding: 0px 15px;
+	margin: 0px 30px;
+	margin-bottom: 53px;
+	border: 1px solid #000;
+}
+
+#evenings_title, #matinees_title {
+	font-weight: bold;
+	font-size: 24px;
+	letter-spacing: 1px;
+}
+
+#evenings, #matinee {
+	padding: 4px 0px;
+	word-spacing: 4px;
+}
+
+#evening_time, #matinee_time{
+	font-size: 25px;
+}
+
+.button3 {
+	background-color: #02B43C; 
+	color: #FFF;
+	font-family: 'PT Sans';
+	font-size: 20px;
+	padding: 15px 45px;
+	text-align: center;
+	text-decoration: none;
+}
+
+.button3:hover {
+	background-color: #000;
+	color: #FFF;
+	transition: .5s ease;
+}
+
+/*--------------
+More info stylings
+----------------*/
+
+#more_info {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: no-wrap;
+}
+
+.more_info {
+	margin: 0 auto;
+	max-width: 45%;
+	color: #000;
+	font-size: 22px;
+	font-family: 'PT Sans';
+	text-align: center;
+	border: 1px solid #000;
+	padding: 10px 18px;
+	margin-top: 20px;
+	margin-bottom: 50px;
+}
+
+#button4{
+	align-self: center;
+	margin-bottom: 30px;
+}
+
+.button4 {
+	background-color: #02B43C; 
+	color: #FFF;
+	font-family: 'PT Sans';
+	font-size: 20px;
+	padding: 15px 45px;
+	text-align: center;
+	text-decoration: none;
+}
+
+.button4:hover {
+	background-color: #000;
+	color: #FFF;
+	transition: .5s ease;
+}
+
+/*-----------
+Scroll to top button
+-----------*/
+
+#scroll_top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #1E1E1E;
+		color: #FFF;
+    width: 50px;
+    height: 50px;
+    display: block;
+    text-decoration: none;
+		cursor: pointer;
+		z-index: 99;
+		border: none;
+		outline: none;
+    border-radius: 35px;
+    display: none;
+    transition: all 0.3s ease;
+		font-size: 30px;
+		font-weight: bold;
+		padding-top: 10px;
+		font-family: 'Questrial';
+}
+
+#scroll_top:hover {
+	background-color: #FFF;
+	color: #000;
+}
+
+
+

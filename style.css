@@ -1,0 +1,149 @@
+/*--------------
+Content Stylings
+---------------*/
+
+#content {
+	height: auto;
+	width: 100%;
+	font-size: 0px;
+	display: flex;
+}
+
+
+.images {
+	width: 100%;
+	object-fit: cover;
+	height: 800px;
+}
+
+/*--------------
+Overlay stylings
+----------------*/
+
+.p_container, .lk_container, .w_container {
+	flex: 0 calc(100%/3);
+  display: flex;
+	position: relative;
+}
+
+
+.p_overlay, .lk_overlay, .w_overlay {
+	position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #000000;
+}
+
+.p_heading, .lk_heading, .w_heading {
+	color: white;
+	font-family: 'Open Sans';
+	font-size: 50px;
+	font-weight: bold;
+	text-align: center;
+	margin-top: 100px;
+	margin-bottom: 30px;
+	
+}
+
+.p_container:hover .p_overlay, .lk_container:hover .lk_overlay, .w_container:hover .w_overlay {
+  opacity: 0.8;
+}
+
+.p_line, .lk_line, .w_line {
+	width: 30%;
+	margin: 0 auto;
+	border-bottom-style: solid;
+	border-bottom-color: white;
+	border-bottom-width: 5px;
+}
+
+/*--------------------------
+Text for Phantom synopsis
+--------------------------*/
+
+.p_text {
+  color: white;
+	font-family: 'Open Sans';
+	text-align: center;
+	font-size: 20px;
+	margin: 0 auto;
+	width: 65%;
+	margin-top: 40px;
+}
+
+@media all and (max-width: 1440px) {
+	.p_text {
+		font-size: 18px;
+	}
+	
+	.p_heading {
+		font-size: 35px;
+	}
+}
+
+@media all and (max-width: 1020px) {
+	.p_text {
+		font-size: 16px;
+		width: 100%;
+	}
+	
+	.p_heading {
+		font-size: 35px;
+	}
+}
+
+/*--------------------------
+Text for Lion King synopsis
+--------------------------*/
+
+.lk_text {
+  color: white;
+	font-family: 'Open Sans';
+	text-align: center;
+  font-size: 20px;
+	margin: 0 auto;
+	width: 65%;
+	margin-top: 40px;
+}
+
+@media all and (max-width: 1440px) {
+	.lk_text {
+		font-size: 18px;
+	}
+	
+	.lk_heading {
+		font-size: 35px;
+	}
+}
+
+
+/*--------------------------
+Text for Wicked synopsis
+--------------------------*/
+
+.w_text {
+  color: white;
+	font-family: 'Open Sans';
+	text-align: center;
+  font-size: 20px;
+	margin: 0 auto;
+	width: 65%;
+	margin-top: 40px;
+}
+
+@media all and (max-width: 1440px) {
+	.w_text {
+		font-size: 18px;
+	}
+	
+	.w_heading {
+		font-size: 35px;
+	}
+}
+

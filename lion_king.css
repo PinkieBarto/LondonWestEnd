@@ -1,0 +1,338 @@
+/*--------------
+Main content Stylings
+---------------*/
+
+#content{
+	width: 100%;
+	height: auto;
+	background-color: #982220
+}
+
+/*--------------
+Image and text overlay styling
+---------------*/
+
+#heading {
+	background-color: #0078C1;
+}
+
+h2 {
+	color: #FFFFFF;
+	font-family: 'Wendy One';
+	font-size: 85px;
+	text-align: center;
+	padding: 25px 0px;
+	letter-spacing: 5px;
+	word-spacing: 5px;
+	position: absolute;
+	top: 45%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+#lionking_image {
+	position: relative;
+	width: 100%;
+	height: 780px;
+	object-fit: cover;
+	opacity: 1.0;
+}
+
+.button {
+	background-color: #FEBD11; 
+	color: #000;
+	font-family: 'PT Sans';
+	font-size: 20px;
+	padding: 15px 48px;
+	text-align: center;
+	text-decoration: none;
+	position: absolute;
+	top: 55%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.button:hover {
+	background-color: #FFFFFF;
+	color: #000000;
+	transition: .5s ease;
+}
+
+/*------------------
+Short information styling
+--------------------*/
+
+#short_info {
+	background-color: #0078C1;
+}
+
+#info {
+	color: #FFFFFF;
+	font-family: 'PT Sans';
+	font-size: 25px;
+	text-align: center;
+	padding: 20px 0px;
+}
+
+#info p {
+	padding-top: 20px;
+}
+
+/*------------------
+Synopsis Styling
+--------------------*/
+
+.synopsis {
+	display: flex;
+	justify-content: center;
+	flex-direction: row;
+	flex-wrap: wrap;
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
+
+#synopsis_title {
+	color: #FFFFFF;
+	font-family: 'Droid Sans';
+	font-weight: bold;
+	font-size: 30px;
+	text-align: center;
+	letter-spacing: 2px;
+	text-decoration: underline;
+	padding-bottom: 5px;
+	width: 1%;
+}
+
+#synopsis_text {
+	color: #FFFFFF;
+	font-family: 'PT Sans';
+	font-size: 19px;
+	text-align: left;
+	width: 32%;
+	padding-top: 10px;
+}
+
+#lion_king3 {
+	object-fit: cover;
+	width: 40%;
+	max-height: 370px;
+	margin-right: 60px;
+}
+
+@media all and (max-width: 1440px) {
+	#synopsis_text {
+		width: 46%;
+		font-size: 18px;
+		padding-top: 1px;
+	}
+}
+
+hr {
+	margin: 0 auto;
+	width: 60%;
+	border-bottom: 0px;
+}
+
+/*---------------
+Prices/Times Stylings
+------------------*/
+
+#times_prices {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	text-align: center;
+	padding: 60px 0px;
+}
+
+h3 {
+	color: #FFFFFF;
+	font-size: 40px;
+	font-family: 'Droid Sans';
+	font-weight: bold;
+	margin: 25px 190px;
+	letter-spacing: 1px;
+	text-decoration: underline;
+}
+
+#line {
+	height: auto;
+	width: 4px;
+	border-right: 4px dashed #FFFFFF;
+	}
+
+.button2 {
+	background-color: #FEBD11; 
+	color: #000;
+	font-family: 'PT Sans';
+	font-size: 20px;
+	padding: 15px 48px;
+	text-align: center;
+	text-decoration: none;
+}
+
+.button2:hover {
+	background-color: #FFFFFF;
+	color: #000000;
+	border: 2px solid #FFFFFF;
+	border-radius: 3px;
+	transition: .5s ease;
+}
+
+/*------------------
+Ticket prices stylings
+--------------------*/
+
+#times_prices li {
+	color: #FFFFFF;
+	font-family: 'PT Sans';
+	font-size: 20px;
+	word-spacing: 2px;
+}
+
+#times_prices ul {
+	width: 20%;
+  margin: 0 auto;
+  text-align: left;
+	list-style-type: circle;
+}
+
+#notice {
+	width: 100%;
+	margin: 0 auto;
+	color: #FFFFFF;
+	font-family: 'PT Sans';
+	font-size: 14px;
+	padding: 12px 0px;
+	margin-bottom: 45px;
+	margin-top: 10px;
+}
+
+/*-----------------------
+Performance times stylings
+-------------------------*/
+
+.evenings, .matinees {
+	display: inline-block;
+	color: #FFFFFF;
+	font-family: 'PT sans';
+	font-size: 18px;
+	padding: 0px 15px;
+	margin: 0px 30px;
+	margin-bottom: 53px;
+	border: 1px solid #FFF;
+}
+
+#evenings_title, #matinees_title {
+	font-weight: bold;
+	font-size: 24px;
+	letter-spacing: 1px;
+}
+
+#evenings, #matinee {
+	padding: 4px 0px;
+	word-spacing: 4px;
+}
+
+#evening_time, #matinee_time{
+	font-size: 25px;
+}
+
+.button3 {
+	background-color: #FEBD11; 
+	color: #000;
+	font-family: 'PT Sans';
+	font-size: 20px;
+	padding: 15px 48px;
+	text-align: center;
+	text-decoration: none;
+}
+
+.button3:hover {
+	background-color: #FFFFFF;
+	color: #000000;
+	border: 2px solid #FFFFFF;
+	border-radius: 3px;
+	transition: .5s ease;
+}
+
+
+/*--------------
+More info stylings
+----------------*/
+
+#more_info {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: no-wrap;
+}
+
+.more_info {
+	margin: 0 auto;
+	max-width: 45%;
+	color: #FFFFFF;
+	font-size: 22px;
+	font-family: 'PT Sans';
+	text-align: center;
+	border: 1px solid #FFFFFF;
+	padding: 10px 18px;
+	margin-top: 20px;
+	margin-bottom: 50px;
+}
+
+#button4{
+	align-self: center;
+	margin-bottom: 30px;
+}
+
+.button4 {
+	background-color: #FEBD11; 
+	color: #000;
+	font-family: 'PT Sans';
+	font-size: 20px;
+	padding: 15px 48px;
+	margin: 20px;
+	text-align: center;
+	text-decoration: none;
+}
+
+.button4:hover {
+	background-color: #FFFFFF;
+	color: #000000;
+	border: 2px solid #FFFFFF;
+	border-radius: 3px;
+	transition: .5s ease;
+}
+
+/*-----------
+Scroll to top button
+-----------*/
+
+#scroll_top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #1E1E1E;
+		color: #FFF;
+    width: 50px;
+    height: 50px;
+    display: block;
+    text-decoration: none;
+		cursor: pointer;
+		z-index: 99;
+		border: none;
+		outline: none;
+    border-radius: 35px;
+    display: none;
+    transition: all 0.3s ease;
+		font-size: 30px;
+		font-weight: bold;
+		padding-top: 10px;
+		font-family: 'Questrial';
+}
+
+#scroll_top:hover {
+	background-color: #FFF;
+	color: #000;
+}
